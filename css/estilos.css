@@ -1,0 +1,32 @@
+body {
+	background-color: springgreen;
+	font-family: heebo;
+}
+
+.menu {
+	background-color: black; 
+}
+
+.menu ul {
+	display: flex;
+	justify-content: space-around;
+}
+
+.menu li {
+	list-style: none;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+.site-subtitle,
+.site-title {
+	color: black;
+	text-align: center;
+}
+
+.site-subtitle {
+	font-style: italic;
+}
