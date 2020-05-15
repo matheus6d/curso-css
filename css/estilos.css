@@ -1,10 +1,47 @@
+/* reset do css. Tirar coisas padrões*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
 	background-color: springgreen;
 	font-family: heebo;
+	height: 100vh;
+}
+
+/* Se a tela tiver pelo menos 400px vai carregar estes estilos*/
+@media (min-width: 400px) {
+	body{
+		font-size: 14px;
+	}
+}
+
+@media (min-width: 600px) {
+	body{
+		font-size: 18px;
+	}
+}
+
+@media (min-width: 1200px) {
+	body{
+		font-size: 22px;
+	}
+}
+
+header {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .menu {
 	background-color: black; 
+	position: fixed;
+	width: 100vh;
+	top: 0;
 }
 
 .menu ul {
@@ -16,9 +53,16 @@ body {
 	list-style: none;
 }
 
+.menu a {
+	display: block;
+	padding: 10px 20px;
+
+}
+
 a {
 	color: white;
 	text-decoration: none;
+
 }
 
 .site-subtitle,
@@ -27,6 +71,15 @@ a {
 	text-align: center;
 }
 
+.site-title {
+	font-size: 3em;
+}
+
 .site-subtitle {
 	font-style: italic;
+}
+
+.img-portfolio {
+	height: 180px;
+	width: 180px;
 }
